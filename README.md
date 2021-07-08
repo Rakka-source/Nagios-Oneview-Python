@@ -29,7 +29,7 @@ Before starting you need to install the following.
 ## Test check
 
 1) **We will first execute the help command:**
-       ==$./check_onview.py -h==
+       ./check_onview.py -h
 
 <pre><code>
 	 $./check_onview.py -h
@@ -54,7 +54,7 @@ Before starting you need to install the following.
 </code></pre>
 
 2) **Test command execution (example):**
-	==$./check_onview.py -H < ip > -u < user > -p < password > -t==
+	./check_onview.py -H < ip > -u < user > -p < password > -t
 <pre><code>
 $./check_onview.py -H < ip > -u < user > -p < password > -t
 Number of errors: 3 // Critical:  1 // Warning: 2
@@ -64,21 +64,21 @@ Number of errors: 3 // Critical:  1 // Warning: 2
 > **Note:** If your password has symbols, it is recommended to put it in single quotes ( ' ) example 'P!AS#woRd'
  
 3) **Alert check by index:**
-==$./check_onview.py -H < ip > -u < user > -p < password > -S 0 -o < index 0 - 10>==
+./check_onview.py -H < ip > -u < user > -p < password > -S 0 -o < index 0 - 10>
 <pre><code>
-$check_onview.py -H < ip > -u < user > -p < password > -S 0 -o 0
+$./check_onview.py -H < ip > -u < user > -p < password > -S 0 -o 0
 Critical: Alert type server-hardware.opStatus.outofmaintenancemode.withcriticalstatus
 Alert status: Critical
 Description: At least one critical alert for this server hardware was active when maintenance mode was disabled.
 
 
-$check_onview.py -H < ip > -u < user > -p < password > -S 0 -o 1
+$./check_onview.py -H < ip > -u < user > -p < password > -S 0 -o 1
 Warning: Alert type remote-support.unEntitledDevice
 Alert status: Warning
 Description: Remote support is not monitoring 1 eligible devices: device registration with the HPE data center may have failed or the warranty or contract on some of these devices may have expired.
 
 
-$check_onview.py -H < ip > -u < user > -p < password > -S 0 -o 2
+$./check_onview.py -H < ip > -u < user > -p < password > -S 0 -o 2
 The reports do not indicate an alert for the index: 2
 
 </code></pre>
@@ -86,16 +86,16 @@ The reports do not indicate an alert for the index: 2
 > **Note:** This monitoring is general, and is ranked first in the order of critical alerts.  Since there can be multiple reasons for alarms, it was chosen to index them. This allows you to know the status and description of the alert.  In production I use 3 indexes (Images in the repository). you can use the amount you want
 
 4) **Power supply alert check** 
-==$./check_onview.py -H < ip > -u < user > -p < password > -S 1==
+./check_onview.py -H < ip > -u < user > -p < password > -S 1
 <pre><code>
 $./check_onview.py -H < ip > -u < user > -p < password > -S 1
 Status power supply OK
 </code></pre>
 
 5) **Temperature check**
-==$./check_onview.py -H < ip > -u < user > -p < password > -S 2==
+./check_onview.py -H < ip > -u < user > -p < password > -S 2
 <pre><code>
-$./check_onview.py -H < ip > -u < user > -p < password > -S 1
+$./check_onview.py -H < ip > -u < user > -p < password > -S 2
 Status Thermal :Ok the temperature threshold has not been exceeded
 </code></pre>
 > **Note:** It does not give the temperature of the moment. Detect designated value from oneview to alert
