@@ -16,13 +16,13 @@ Before starting you need to install the following.
 >**Credentials**
 
 ### Install python and libraries on RHL7
-1.- yum install python3
-2.- pip install requests= =2.10.0
-3.- pip install setuptools= =39.0.1
-4.- pip install six= =1.16.0
-5.- pip install hpOneView
-6.- pip install amqplib
-7.- pip install future
+1) yum install python3
+2) pip install requests= =2.10.0
+3) pip install setuptools= =39.0.1
+4) pip install six= =1.16.0
+5) pip install hpOneView
+6) pip install amqplib
+7) pip install future
 
 > **Note:** The tests were done with that version of each package, however it is possible to use more updated packages. **But this is not fully proven. Please send me your feedback**
 
