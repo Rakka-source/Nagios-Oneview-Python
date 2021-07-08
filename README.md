@@ -1,6 +1,6 @@
 # Nagios-Oneview-Synergy-Python
 
-Monitor synergy through oneview easily in nagios. It runs for every query made by nagios
+Monitor synergy through oneview easily in nagios. Integrate alarm easily to nagios 
 
 ## Prerequisite
 Before starting you need to install the following.
