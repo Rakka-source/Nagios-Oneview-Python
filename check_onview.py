@@ -8,8 +8,7 @@ import hpOneView
 # Nagios plugin  OneView monitoring
 #
 # Notes
-# - The RHEL 7.
-# - Monitoring in lapsus 5 minute
+# - The RHEL 7
 # - This monitoring it's not completly exactli, becouse we use the api. I try to monitoring Synergy
 # - Python 3.6 and requiermient.txt
 # - It's not necesary docker or other services
