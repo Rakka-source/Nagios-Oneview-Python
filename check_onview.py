@@ -11,7 +11,7 @@ import hpOneView
 # - The RHEL 7
 # - This monitoring it's not completly exactli, becouse we use the api. I try to monitoring Synergy
 # - Python 3.6 and requiermient.txt
-# - It's not necesary docker or other services
+# - It's not necessary docker or other services. Only run the command per query
 #
 # Author: Delta-Rakkautta [F.G.]
 # Date: 08 July 2021
